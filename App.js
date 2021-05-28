@@ -6,6 +6,8 @@ const app = express();
 
 const port = process.env.PORT||8000;
 
+add.add(1,1);
+
 app.use(express.static('static'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
