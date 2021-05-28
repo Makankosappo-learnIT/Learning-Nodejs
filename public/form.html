@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HTML Form</h2>
+    <form action="./form" method="POST">
+        <table>
+            <tr>
+                <td><label for="First_Name">First Name</label></td>
+                <td><input type="text" id="First_Name" name="First_Name"></td>
+            </tr>
+            <tr>
+                <td><label for="Last_Name">Last Name</label></td>
+                <td><input type="text" name="Last_Name" id="Last_Name"></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email</label></td>
+                <td><input type="email" name="Email" id="Email"></td>
+            </tr>
+            <tr>
+                <td><label for="Phone">Phone</label></td>
+                <td><input type="number" name="Phone" id="Phone"></td>
+            </tr>
+            <tr>
+                <label for="City"></label>
+                <select name="City" id="City">
+                    <option value="Hong_Kong">Hong Kong</option>
+                </select>
+            </tr>
+            <tr>
+                <label for="Reason">Reason</label>
+                <select name="Reason" id="Reason">
+                    <option value="First_Reason">1</option>
+                    <option value="Second_Reason">2</option>
+                    <option value="Third_Reason">3</option>
+                </select>
+            </tr>
+        </table>
+        <input type="submit" value="Submit to me">
+    </form>
+</body>
+</html>
