@@ -2,10 +2,12 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const add = require('./add');
+const tools = require('./tools');
 const app = express();
 
 const port = process.env.PORT||8000;
 
+tools.course_teacher(2);
 add.add(1,1);
 
 app.use(express.static('static'));
