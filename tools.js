@@ -31,6 +31,16 @@ var tools = {
             }
         });
     },
+    input_data: function(student_name, student_email){
+        var sql = "INSERT INTO Student(student_name, student_email) VALUES ('" + student_name + "', '" + student_email + "')";
+        db.query(sql, function(error, result){
+            if(error){
+                console.log(error);
+            }else{
+                console.log(result);
+            }
+        });
+    }
 };
 
 module.exports = tools
